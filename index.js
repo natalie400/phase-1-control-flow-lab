@@ -2,7 +2,7 @@ function scuberGreetingForFeet(sumdigit){
   if (sumdigit <= 400){
     return 'This one is on me!';
   }
-  else if (sumdigit >2000 && sumdigit < 2500){
+  else if (sumdigit >2000 && sumdigit <= 2500){
     return 'I will gladly take your thirty bucks.';
   }
   else if (sumdigit > 2500) 
@@ -11,8 +11,7 @@ function scuberGreetingForFeet(sumdigit){
 }
 
 function ternaryCheckCity(city){
-  if (city==='NYC') { return "Ok, sounds good."  }
-  else {return "No go."}
+  return city==='NYC'? 'Ok, sounds good.': 'No go.';
 }
 
 function switchOnCharmFromTip(tip){
